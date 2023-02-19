@@ -88,6 +88,7 @@ class Emulator:
         for i in range(0, 4096):
             self.Memory.append(0x0)
 
+        pygame.init()
         fonts = [ 
         0xF0, 0x90, 0x90, 0x90, 0xF0, # 0
         0x20, 0x60, 0x20, 0x20, 0x70, # 1
@@ -154,7 +155,7 @@ class Emulator:
         self.zeroColor = [0, 0, 50]
         self.oneColor = [255, 255, 255]
 
-        pygame.init()
+        # pygame.init()
         self.size = 10
         width = 64
         height = 32
